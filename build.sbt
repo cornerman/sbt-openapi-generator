@@ -29,7 +29,8 @@ lazy val `sbt-openapi-generator` = (project in file("."))
 
     resolvers ++= Seq(
       Resolver.sbtPluginRepo("snapshots"),
-      Resolver.sonatypeRepo("snapshots")
+      Resolver.sonatypeRepo("snapshots"),
+      ("jitpack" at "https://jitpack.io")
     ),
 
     homepage := Some(url("https://openapi-generator.tech")),
@@ -54,5 +55,5 @@ lazy val `sbt-openapi-generator` = (project in file("."))
         devConnection = "scm:git:ssh://git@github.com:OpenAPITools/openapi-generator.git")
     ),
 
-    libraryDependencies += "org.openapitools" % "openapi-generator" % "5.0.1"
+    libraryDependencies += "com.github.ex0ns" % "openapi-generator" % "scala_akka-SNAPSHOT"
   ).enablePlugins(SbtPlugin)
