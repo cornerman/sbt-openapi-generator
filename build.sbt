@@ -55,5 +55,5 @@ lazy val `sbt-openapi-generator` = (project in file("."))
         devConnection = "scm:git:ssh://git@github.com:OpenAPITools/openapi-generator.git")
     ),
 
-    libraryDependencies += "com.github.cornerman" % "openapi-generator" % "2dad3d8ae37"
+    libraryDependencies += "com.github.cornerman" % "openapi-generator" % "7ad89a72536"
   ).enablePlugins(SbtPlugin)
